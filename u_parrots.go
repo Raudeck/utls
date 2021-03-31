@@ -250,7 +250,7 @@ func utlsIdToSpec(id ClientHelloID) (ClientHelloSpec, error) {
 					0x00, // pointFormatUncompressed
 				}},
 				&SessionTicketExtension{},
-				&ALPNExtension{AlpnProtocols: []string{"h2", "http/1.1"}},
+				&ALPNExtension{AlpnProtocols: []string{"http/1.1"}},
 				&StatusRequestExtension{},
 				&SignatureAlgorithmsExtension{SupportedSignatureAlgorithms: []SignatureScheme{
 					ECDSAWithP256AndSHA256,
